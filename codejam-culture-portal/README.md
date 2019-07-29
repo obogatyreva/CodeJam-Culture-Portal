@@ -1,1 +1,0 @@
-# CodeJam-Culture-Portal
