@@ -1,12 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme, fade } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -15,18 +14,50 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import SearchIcon from '@material-ui/icons/Search';
 import Person from '@material-ui/icons/PermIdentity'; 
-import InputBase from '@material-ui/core/InputBase';
 import People from '@material-ui/icons/People';
 import DevTeam from '@material-ui/icons/Build';
-import { CardMedia } from '@material-ui/core';
 
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+import Search from '../Search'
+import WriterOfTheDay from '../WriterOfTheDay';
+import DeveloversTeam from '../DevelopersTeam';
+
+const info = {
+  writerOfTheDay: {
+    fullName: 'Lavon Volski',
+    yearsOfLife: '14 September  1965 - in our time',
+    photo: {
+      url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWvyzIFOqgN_gT_VxXixU5tlW2ZZkQWTN8iDFFQAdIz55FX8-u',
+      width: 255,
+    },
+    shortAbout: '(Belarusian: Леанід Арту́равіч «Ляво́н» Зэйдэль-Во́льскі. Belarusian rock-musician, cultural figure, an author of music and lyrics, poet, artist, group leader of N.R.M.[1] and Krambambula[2][3], the owner of numerous musical awards, both personal and as a member of various collectives. He is the son of Artur Volski, who is a known Belarusian writer.',
+  },
+  develoversTeam: {
+    aleksandr: {
+      firstName: 'Aleksandr',
+      secondName: "Lazarev",
+      photo: {
+        url: 'https://pp.userapi.com/c858220/v858220086/229bb/PI0xPP7E7LU.jpg',
+        width: 255,
+      },
+      about: "Reaching the top, be ready to be at the bottom of the next level",
+      position: "group 26",
+      scope: "collaboration",
+    },
+    olga: {
+      firstName: "Olga",
+      secondName: "Bogatyreva",
+      photo: {
+        url: 'https://pp.userapi.com/c856020/v856020533/a2449/g9-KCpXZyas.jpg',
+        width: 255,
+      },
+      about: "Work hard to get what you like, otherwise you'll be forced to just like what you get.",
+      position: "group 26",
+      scope: "collaboration"
+    },
+  }
+}
+
 
 const drawerWidth = 240;
 
@@ -89,58 +120,6 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
-  search: {
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
-    },
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(1),
-      width: 'auto',
-    },
-  },
-  searchIcon: {
-    width: theme.spacing(7),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  inputRoot: {
-    color: 'inherit',
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 7),
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      width: 120,
-      '&:focus': {
-        width: 200,
-      },
-    },
-  },
-  card: {
-    padding: '5px'
-  },
-  img: {
-    margin: '0 5px 5px 0',
-  },
-  cardContent: {
-    display: 'flex',
-    justifyContent: 'start',
-    alignContent: 'top',
-    alignItems: 'top',
-  },
-  writerName: {
-    margin: '8px 0 8px 0',
-  }
 }));
 
 export default function MiniDrawer() {
@@ -166,30 +145,18 @@ export default function MiniDrawer() {
         })}
       >
         <Toolbar>
-            <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                onClick={handleDrawerOpen}
-                edge="start"
-                className={clsx(classes.menuButton, {
-                [classes.hide]: open,
-                })}
-            >
-            <MenuIcon />
-            </IconButton>
-            <div className={classes.search}>
-                <div className={classes.searchIcon}>
-                <SearchIcon />
-                </div>
-                <InputBase
-                placeholder="Search…"
-                classes={{
-                    root: classes.inputRoot,
-                    input: classes.inputInput,
-                }}
-                inputProps={{ 'aria-label': 'search' }}
-                />
-            </div>
+          <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={clsx(classes.menuButton, {
+              [classes.hide]: open,
+              })}
+          >
+          <MenuIcon />
+          </IconButton>
+          <Search />
         </Toolbar>
       </AppBar>
       <Drawer
@@ -242,42 +209,16 @@ export default function MiniDrawer() {
               <ListItemText primary='Russian' />
             </ListItem>
             <ListItem button key='BE'>
-              <ListItemIcon> BE </ListItemIcon> 
-              <ListItemText primary='Belorus' />
+              <ListItemIcon> BY </ListItemIcon>
+              <ListItemText primary='Belarus' />
             </ListItem>
         </List>
       </Drawer>
       <main className={classes.content}>
-        <div className={classes.toolbar} />
-        <Typography paragraph variant="h5" component="h1">
-          Writer of the day
-        </Typography>
-
-        <Card >
-            <CardActionArea className={classes.card}>
-                <img 
-                src='https://pp.userapi.com/c846019/v846019294/fb4c9/cleLsOjIi4o.jpg' 
-                alt='Writer of the day' 
-                width='255' 
-                align="left"
-                className={classes.img}
-                />
-                <Typography gutterBottom variant="h5" component="h2" className={classes.writerName}>
-                    Frim
-                </Typography>
-                <Typography variant="body1" color="textSecondary" component="p" >
-                    Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-                    facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-                    tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-                    consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-                    vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-                    hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-                    tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-                    nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-                    accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-                </Typography>
-            </CardActionArea>
-        </Card>
+        
+        <WriterOfTheDay {...info.writerOfTheDay} />
+        <DeveloversTeam {...info.develoversTeam} />
+        
       </main>
     </div>
   );
