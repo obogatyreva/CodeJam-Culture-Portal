@@ -76,7 +76,8 @@ export default function WriterList(props) {
 
         <PhotoGallery info={photoGalleryURL} />
 
-        {/* <Video info={VideoGalleryURL}/> */}
+        <Video info={VideoGalleryURL}/>
+
         </>
     )
 }

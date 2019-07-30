@@ -5,7 +5,9 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles(theme => ({
-    margin: 20,
+    photoBox: {
+        margin: 30,
+    }
 }));
 
 export default function PhotoGallery(props) {
