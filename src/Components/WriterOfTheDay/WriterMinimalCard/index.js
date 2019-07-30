@@ -6,7 +6,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
     card: {
-        padding: '5px'
+        padding: '5px',
+        marginBottom: '10px'
     },
     img: {
         margin: '0 5px 5px 0',
@@ -27,8 +28,8 @@ export default function WriterMinimal(info) {
     const { fullName, yearsOfLife, photo, shortAbout } = info
 
     return (
-        <Card >
-            <CardActionArea className={classes.card}>
+        <Card className={classes.card} >
+            <CardActionArea >
                 <img 
                 src={photo.url}
                 alt={fullName}

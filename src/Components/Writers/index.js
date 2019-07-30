@@ -2,8 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
-import WriterMinimalCard from './WriterMinimalCard'
-
+import WriterMinimalCard from '../WriterOfTheDay/WriterMinimalCard'
 
 const useStyles = makeStyles(theme => ({
     header: {
@@ -12,15 +11,17 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function WriterOfTheDay(info) {
+export default function WriterOfTheDay(props) {
     const classes = useStyles();
+
+    const { writersInfo } = props
 
     return (
         <>
         <Typography paragraph variant="h5" component="h1" className={classes.header}>
-          Writer of the day
+          Writers
         </Typography>
-        <WriterMinimalCard {...info} />
+            {writersInfo.map((writerInfo) => (<WriterMinimalCard {...writerInfo} />))}
         </>
     )
 }
