@@ -16,8 +16,8 @@ const Video = (props) => {
   const { info } = props;
 
   const opts = {
-    height: (window.innerWidth - 110) / 1.64,
-    width: (window.innerWidth - 110),
+    height: (window.innerWidth - 150) / 1.64,
+    width: (window.innerWidth - 150),
     playerVars: {
       autoplay: 1
     }
@@ -40,4 +40,4 @@ const Video = (props) => {
   );
 };
 
-export default  Video;
+export default Video;
