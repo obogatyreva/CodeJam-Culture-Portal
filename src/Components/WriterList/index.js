@@ -7,7 +7,7 @@ import { Container } from '@material-ui/core';
 import WriterTimeLine from './TimaLine';
 import Video from './Video';
 import PhotoGallery from './PhotoGallery';
-import YandexMap from './GeoMap/YandexMap';
+import YandexMap from './YandexMap';
 
 
 const useStyles = makeStyles(theme => ({
