@@ -17,8 +17,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Person from '@material-ui/icons/PermIdentity';
 import People from '@material-ui/icons/People';
 import DevTeam from '@material-ui/icons/Build';
+import Typography from '@material-ui/core/Typography';
 
-import Search from '../Search'
+
 import WriterOfTheDay from '../writer-of-the-day';
 import DeveloversTeam from '../developers-team';
 import Writers from '../writers'
@@ -256,18 +257,20 @@ const MiniDrawer = () =>{
       })}
      >
        <Toolbar>
-         <IconButton
-          color="inherit"
-          aria-label="open drawer"
-          onClick={handleDrawerOpen}
-          edge="start"
-          className={clsx(classes.menuButton, {
-            [classes.hide]: open,
-          })}
-         >
-           <MenuIcon />
-         </IconButton>
-         <Search />
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            className={clsx(classes.menuButton, {
+              [classes.hide]: open,
+            })}
+          >
+          <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" noWrap>
+            Writers of Belarus
+          </Typography>
        </Toolbar>
      </AppBar>
      <Drawer
@@ -329,8 +332,8 @@ const MiniDrawer = () =>{
 
         {/* <WriterOfTheDay {...info.writerOfTheDay} /> */}
         {/* <DeveloversTeam {...info.develoversTeam } /> */}
-        {/* <Writers writersInfo={info.writers}/> */}
-        <WriterList writerInfo={info.writers[0]}/>
+        <Writers writersInfo={info.writers}/>
+        {/* <WriterList writerInfo={info.writers[0]}/> */}
 
      </main>
   </div>
