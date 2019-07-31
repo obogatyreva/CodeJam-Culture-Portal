@@ -2,11 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import { Container, Box } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 
-import WriterTimeLine from './TimaLine'
-import Video from './Video'
-import PhotoGallery from './PhotoGallery'
+import WriterTimeLine from './TimaLine';
+import Video from './Video';
+import PhotoGallery from './PhotoGallery';
+import YandexMap from './GeoMap/YandexMap';
 
 
 const useStyles = makeStyles(theme => ({
@@ -62,6 +63,8 @@ export default function WriterList(props) {
             </Typography>
         </Container>
 
+        <YandexMap info={geoActivityURL}/>
+
         <Typography paragraph variant="h6" component="h6"  className={classes.header}>
             Biography
         </Typography>
@@ -77,6 +80,8 @@ export default function WriterList(props) {
         <PhotoGallery info={photoGalleryURL} />
 
         <Video info={VideoGalleryURL}/>
+
+        
 
         </>
     )
