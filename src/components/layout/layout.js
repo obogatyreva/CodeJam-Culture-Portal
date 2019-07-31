@@ -19,7 +19,7 @@ import People from '@material-ui/icons/People';
 import DevTeam from '@material-ui/icons/Build';
 
 import Search from '../Search'
- import WriterOfTheDay from '../writer-of-the-day';
+import WriterOfTheDay from '../writer-of-the-day';
 // import DeveloversTeam from '../developers-team';
 import Writers from '../writers'
 import WriterList from '../writers-list'
@@ -321,9 +321,9 @@ const MiniDrawer = () =>{
      <main className={classes.content}>
 
         {/*<WriterOfTheDay {...info.writerOfTheDay} />*/}
-       {/*<DeveloversTeam {...info.develoversTeam } />*/}
-       {/* <Writers writersInfo={info.writers}/>*/}
-       <WriterList writerInfo={info.writers[0]}/>
+        {/* <DeveloversTeam {...info.develoversTeam } /> */}
+        {/* <Writers writersInfo={info.writers}/> */}
+        <WriterList writerInfo={info.writers[0]}/>
 
      </main>
   </div>
