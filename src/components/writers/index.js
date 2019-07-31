@@ -1,3 +1,3 @@
-import WriterOfTheDay from "./writers";
+import Writers from "./writers";
 
-export default  WriterOfTheDay;
+export default  Writers;

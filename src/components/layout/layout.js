@@ -20,7 +20,7 @@ import DevTeam from '@material-ui/icons/Build';
 
 import Search from '../Search'
 import WriterOfTheDay from '../writer-of-the-day';
-// import DeveloversTeam from '../developers-team';
+import DeveloversTeam from '../developers-team';
 import Writers from '../writers'
 import WriterList from '../writers-list'
 
@@ -138,8 +138,13 @@ const info = {
         {
           "data":"14 September  1965 - in our time",
           "info":"https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8847208,27.5233292,12z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972"
+        },
+        {
+          "data":"14 September  1965 - in our time",
+          "info":"https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@63.8847208,47.5233292,12z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972"
         }
-      ]
+      ],
+      city: 'Minsk',
     },
     {
       fullName: 'Lavon Volski 2',
@@ -149,6 +154,7 @@ const info = {
         width: 255,
       },
       shortAbout: '(Belarusian: Леанід Арту́равіч «Ляво́н» Зэйдэль-Во́льскі. Belarusian rock-musician, cultural figure, an author of music and lyrics, poet, artist, group leader of N.R.M.[1] and Krambambula[2][3], the owner of numerous musical awards, both personal and as a member of various collectives. He is the son of Artur Volski, who is a known Belarusian writer.',
+      city: 'Brest',
     },
     {
       fullName: 'Lavon Volski 3',
@@ -158,6 +164,7 @@ const info = {
         width: 255,
       },
       shortAbout: '(Belarusian: Леанід Арту́равіч «Ляво́н» Зэйдэль-Во́льскі. Belarusian rock-musician, cultural figure, an author of music and lyrics, poet, artist, group leader of N.R.M.[1] and Krambambula[2][3], the owner of numerous musical awards, both personal and as a member of various collectives. He is the son of Artur Volski, who is a known Belarusian writer.',
+      city: 'Gomel',
     },
   ]
 }
@@ -320,7 +327,7 @@ const MiniDrawer = () =>{
      </Drawer>
      <main className={classes.content}>
 
-        {/*<WriterOfTheDay {...info.writerOfTheDay} />*/}
+        {/* <WriterOfTheDay {...info.writerOfTheDay} /> */}
         {/* <DeveloversTeam {...info.develoversTeam } /> */}
         {/* <Writers writersInfo={info.writers}/> */}
         <WriterList writerInfo={info.writers[0]}/>
