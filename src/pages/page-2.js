@@ -1,14 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../Components/layout"
+import Layout from "../Components/layout";
+import databaseApi from "../database-api";
+import Writers from "../Components/writers";
 
 const SecondPage = () => (
   <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Writers writersInfo={databaseApi.writers}/>>
   </Layout>
-)
+);
 
 export default SecondPage
