@@ -39,7 +39,7 @@ export default function DeveloperCard(info) {
             {secondName}
           </Typography>
           <Box className={classes.about}>
-            <Typography variant="body1" color="textSecondary" component="subtitle1" >
+            <Typography variant="body1" color="textSecondary" component="p" >
                 {about}
             </Typography>
           </Box>
