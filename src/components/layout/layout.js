@@ -19,12 +19,7 @@ import Person from '@material-ui/icons/PermIdentity';
 import People from '@material-ui/icons/People';
 import DevTeam from '@material-ui/icons/Build';
 import Typography from '@material-ui/core/Typography';
-
-
-import WriterOfTheDay from '../writer-of-the-day';
-import DeveloversTeam from '../developers-team';
-import Writers from '../writers'
-import WriterList from '../writers-list'
+import databaseApi from '../../database-api';
 
 
 const drawerWidth = 240;
@@ -94,6 +89,7 @@ const MiniDrawer = ({children}) =>{
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [lang, setLang] = React.useState('en');
 
   function handleDrawerOpen() {
     setOpen(true);
@@ -101,6 +97,11 @@ const MiniDrawer = ({children}) =>{
 
   function handleDrawerClose() {
     setOpen(false);
+  }
+  function getLangLabel(langState, langLabel) {
+    const obj = databaseApi.fields.getFields(langState);
+    const {lang} = obj;
+    return lang[langLabel];
   }
 
   return (
@@ -150,13 +151,13 @@ const MiniDrawer = ({children}) =>{
        </div>
        <Divider />
        <List>
-          <Link to="/">
+          <Link to="/" state={{lang}} >
          <ListItem button key='Main'>
            <ListItemIcon><Person /></ListItemIcon>
            <ListItemText primary='Main' />
          </ListItem>
           </Link>
-         <Link to="/page-2">
+         <Link to="/page-2" state={{lang}}>
          <ListItem button key='Writers'>
            <ListItemIcon><People /></ListItemIcon>
            <ListItemText primary='Writers' />
@@ -165,29 +166,23 @@ const MiniDrawer = ({children}) =>{
        </List>
        <Divider />
        <List>
-         <ListItem button key='Developers team'>
-           <ListItemIcon><DevTeam /></ListItemIcon>
-           <ListItemText primary='Developers team' />
-         </ListItem>
-       </List>
-       <Divider />
-       <List>
-         <ListItem button key='EN'>
-           <ListItemIcon><span>EN</span></ListItemIcon>
+         <ListItem button key='EN' onClick={() => setLang('en')}>
+           <ListItemIcon><span>{getLangLabel(lang,'en')}</span></ListItemIcon>
            <ListItemText primary='English' />
          </ListItem>
-         <ListItem button key='RU'>
-           <ListItemIcon><span>RU</span></ListItemIcon>
+         <ListItem button key='RU' onClick={() => setLang('ru')}>
+           <ListItemIcon><span>{getLangLabel(lang,'ru')}</span></ListItemIcon>
            <ListItemText primary='Russian' />
          </ListItem>
-         <ListItem button key='BE'>
-           <ListItemIcon><span>BE</span></ListItemIcon>
+         <ListItem button key='BE' onClick={() => setLang('be')}>
+           <ListItemIcon><span>{getLangLabel(lang,'be')}</span></ListItemIcon>
            <ListItemText primary='Belarus' />
          </ListItem>
        </List>
      </Drawer>
      <main className={classes.content}>
        {children}
+       <h1>{lang}</h1>
         {/* <WriterList writerInfo={info.writers[0]}/> */}
      </main>
   </div>
