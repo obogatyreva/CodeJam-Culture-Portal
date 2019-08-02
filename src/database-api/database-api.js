@@ -395,9 +395,9 @@ const databaseApi = {
         VideoGalleryURL: ["https://www.youtube.com/watch?v=LmBkEFY5-1g"],
         geoActivityURL: [
           {
-            data: "1924",
+            data: "1924 - was born in Byachki",
             info:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18232.73270065475!2d28.364156490038592!3d55.16417374702569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c4b0ef14cf88d1%3A0x9c9158da345cd0b3!2sBychki!5e0!3m2!1sen!2sby!4v1564736832919!5m2!1sen!2sby",
+              "https://www.google.com/maps/place/Bychki/@55.1658464,28.3718726,15.75z/data=!4m5!3m4!1s0x46c4b0ef14cf88d1:0x9c9158da345cd0b3!8m2!3d55.1656958!4d28.3773376",
           },
         ],
         city: "Minsk",
@@ -463,9 +463,10 @@ const databaseApi = {
         VideoGalleryURL: ["https://www.youtube.com/watch?v=eUJrtAz9wHQ"],
         geoActivityURL: [
           {
-            data: "1918",
+            data:
+              "1523 in Krakow, he published the collection “A Song about Bison”",
             info:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760812.4924955842!2d11.954437583754865!3d41.8514669507246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258a111bd74ac3%3A0x3094f9ab2388100!2sMetropolitan+City+of+Rome%2C+Italy!5e0!3m2!1sen!2sby!4v1564737747675!5m2!1sen!2sby",
+              "https://www.google.com/maps/place/Krak%C3%B3w,+Poland/@50.0466813,19.8647879,11z/data=!3m1!4b1!4m5!3m4!1s0x471644c0354e18d1:0xb46bb6b576478abf!8m2!3d50.0646501!4d19.9449799",
           },
         ],
         city: "Minsk",
@@ -846,7 +847,7 @@ const databaseApi = {
           {
             data: "1924",
             info:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18232.73270065475!2d28.364156490038592!3d55.16417374702569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c4b0ef14cf88d1%3A0x9c9158da345cd0b3!2sBychki!5e0!3m2!1sen!2sby!4v1564736832919!5m2!1sen!2sby",
+              "https://www.google.com/maps/place/Bychki/@55.1658464,28.3718726,15.75z/data=!4m5!3m4!1s0x46c4b0ef14cf88d1:0x9c9158da345cd0b3!8m2!3d55.1656958!4d28.3773376",
           },
         ],
         city: "Минск",
@@ -917,9 +918,9 @@ const databaseApi = {
         VideoGalleryURL: ["https://www.youtube.com/watch?v=eUJrtAz9wHQ"],
         geoActivityURL: [
           {
-            data: "1918",
+            data: "1523 - в Кракове издал сборник 'Песня про зубра'",
             info:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760812.4924955842!2d11.954437583754865!3d41.8514669507246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258a111bd74ac3%3A0x3094f9ab2388100!2sMetropolitan+City+of+Rome%2C+Italy!5e0!3m2!1sen!2sby!4v1564737747675!5m2!1sen!2sby",
+              "https://www.google.com/maps/place/Krak%C3%B3w,+Poland/@50.0466813,19.8647879,11z/data=!3m1!4b1!4m5!3m4!1s0x471644c0354e18d1:0xb46bb6b576478abf!8m2!3d50.0646501!4d19.9449799",
           },
         ],
         city: "Минск",
@@ -1298,7 +1299,7 @@ const databaseApi = {
           {
             data: "1924",
             info:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18232.73270065475!2d28.364156490038592!3d55.16417374702569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c4b0ef14cf88d1%3A0x9c9158da345cd0b3!2sBychki!5e0!3m2!1sen!2sby!4v1564736832919!5m2!1sen!2sby",
+              "https://www.google.com/maps/place/Bychki/@55.1658464,28.3718726,15.75z/data=!4m5!3m4!1s0x46c4b0ef14cf88d1:0x9c9158da345cd0b3!8m2!3d55.1656958!4d28.3773376",
           },
         ],
         city: "Miнск",
@@ -1369,9 +1370,9 @@ const databaseApi = {
         VideoGalleryURL: ["https://www.youtube.com/watch?v=eUJrtAz9wHQ"],
         geoActivityURL: [
           {
-            data: "1918",
+            data: "1523 у Кракаве выдаў  зборнік «Песня пра зубра»",
             info:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760812.4924955842!2d11.954437583754865!3d41.8514669507246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258a111bd74ac3%3A0x3094f9ab2388100!2sMetropolitan+City+of+Rome%2C+Italy!5e0!3m2!1sen!2sby!4v1564737747675!5m2!1sen!2sby",
+              "https://www.google.com/maps/place/Krak%C3%B3w,+Poland/@50.0466813,19.8647879,11z/data=!3m1!4b1!4m5!3m4!1s0x471644c0354e18d1:0xb46bb6b576478abf!8m2!3d50.0646501!4d19.9449799",
           },
         ],
         city: "Мiнск",
