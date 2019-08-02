@@ -14,6 +14,7 @@ const databaseApi = {
   writers: {
     eng: [
       {
+        id: "volski",
         fullName: "Lavon Volski",
         yearsOfLife: "14 September  1965 - in our time",
         photo: {
@@ -111,6 +112,7 @@ const databaseApi = {
         city: "Minsk",
       },
       {
+        id: "daineko",
         fullName: "Daineko Leonid ",
         yearsOfLife: "28 january of 1940 year - antil our time",
         photoURL:
@@ -206,6 +208,7 @@ const databaseApi = {
         city: "Minsk",
       },
       {
+        id: "brovka",
         fullName: "Pyotr Brovka",
         yearsOfLife: "25 June 1905 - 24 March 1980, in Minsk",
         photoURL:
@@ -313,6 +316,7 @@ const databaseApi = {
         city: "Minsk",
       },
       {
+        id: "bykov",
         fullName: "Vasily Vladimirovich Bykov",
         yearsOfLife: "1924-2003",
         photo: {
@@ -399,6 +403,7 @@ const databaseApi = {
         city: "Minsk",
       },
       {
+        id: "gusovsky",
         fullName: "Nikolay Gusovsky",
         yearsOfLife: "1470-1533",
         photo: {
@@ -468,6 +473,7 @@ const databaseApi = {
     ],
     ru: [
       {
+        id: "volski",
         fullName: "Лявон Вольский",
         yearsOfLife: "14 сентября 1965 - по наше время",
         photoURL:
@@ -558,6 +564,7 @@ const databaseApi = {
         city: "Minsk",
       },
       {
+        id: "brovka",
         fullName: "Пётр Усти́нович Бро́вка",
         yearsOfLife: "25 июня 1905 - 24 марта 1980, Минск",
         photoURL:
@@ -661,6 +668,7 @@ const databaseApi = {
         city: "Minsk",
       },
       {
+        id: "daineko",
         fullName: "Дайнеко Леонид Мартинович",
         yearsOfLife: "28 января 1940 года - по наше время",
         photoURL:
@@ -757,6 +765,7 @@ const databaseApi = {
         city: "Minsk",
       },
       {
+        id: "bykov",
         fullName: "Василий Владимирович Быков",
         yearsOfLife: "1924-2003",
         photo: {
@@ -843,6 +852,7 @@ const databaseApi = {
         city: "Минск",
       },
       {
+        id: "gusovsky",
         fullName: "Николай Гусовский",
         yearsOfLife: "1470-1533",
         photo: {
@@ -917,6 +927,7 @@ const databaseApi = {
     ],
     by: [
       {
+        id: "volski",
         fullName: "Ляво́н Арту́равіч Во́льскі",
         yearsOfLife: "14 верасня 1965, Мінск - па наш час",
         photoURL:
@@ -1005,6 +1016,7 @@ const databaseApi = {
         ],
       },
       {
+        id: "brovka",
         fullName: "Пётр Бро́ўка",
         yearsOfLife: "25 чэрвеня 1905 - 24 сакавіка 1980, Менск",
         photoURL:
@@ -1112,6 +1124,7 @@ const databaseApi = {
         city: "Мiнск",
       },
       {
+        id: "daineko",
         fullName: "Дайнека Леанiд Мартiнавiч",
         yearsOfLife: "28 студзеня 1940 году - па сучасны час ",
         photoURL:
@@ -1204,6 +1217,7 @@ const databaseApi = {
         city: "Miнск",
       },
       {
+        id: "bykov",
         fullName: "Васіль Уладзіміравіч Быкаў",
         yearsOfLife: "1924-2003",
         photo: {
@@ -1290,6 +1304,7 @@ const databaseApi = {
         city: "Miнск",
       },
       {
+        id: "gusovsky",
         fullName: "Мікола Гусоўскі",
         yearsOfLife: "1470-1533",
         photo: {

@@ -2,6 +2,7 @@ const developers = {
   develoversTeam: {
     eng: {
       aleksandr: {
+        id: "aleksandr",
         firstName: "Aleksandr",
         secondName: "Lazarev",
         photo: {
@@ -15,6 +16,7 @@ const developers = {
         scope: "collaboration",
       },
       olga: {
+        id: "olga",
         firstName: "Olga",
         secondName: "Bogatyreva",
         photo: {
@@ -28,6 +30,7 @@ const developers = {
         scope: "collaboration",
       },
       olesya: {
+        id: "olesya",
         firstName: "Olesya",
         secondName: "Zharnasek",
         photo: {
@@ -41,6 +44,7 @@ const developers = {
         scope: "collaboration",
       },
       andrey: {
+        id: "andrey",
         firstName: "Andrew",
         secondName: "Bakalov",
         photo: {
@@ -53,9 +57,10 @@ const developers = {
         position: "group 26",
         scope: "collaboration",
       },
-      artem: {
-        firstName: "Artem",
-        secondName: "Vishnewski",
+      oleg: {
+        id: "oleg",
+        firstName: "Oleg",
+        secondName: "Vishneuski",
         photo: {
           url:
             "https://pp.userapi.com/c858220/v858220086/229bb/PI0xPP7E7LU.jpg",
@@ -69,6 +74,7 @@ const developers = {
     },
     ru: {
       aleksandr: {
+        id: "aleksandr",
         firstName: "Александр",
         secondName: "Лазарев",
         photo: {
@@ -82,6 +88,7 @@ const developers = {
         scope: "collaboration",
       },
       olga: {
+        id: "olga",
         firstName: "Ольга",
         secondName: "Богатырёва",
         photo: {
@@ -95,6 +102,7 @@ const developers = {
         scope: "collaboration",
       },
       olesya: {
+        id: "olesya",
         firstName: "Олеся",
         secondName: "Жерносек",
         photo: {
@@ -107,6 +115,7 @@ const developers = {
         scope: "collaboration",
       },
       andrey: {
+        id: "andrey",
         firstName: "Андрей",
         secondName: "Бакалов",
         photo: {
@@ -118,8 +127,9 @@ const developers = {
         position: "group 26",
         scope: "collaboration",
       },
-      artem: {
-        firstName: "Артем",
+      oleg: {
+        id: "oleg",
+        firstName: "Олег",
         secondName: "Вишневский",
         photo: {
           url:
@@ -134,6 +144,7 @@ const developers = {
     },
     by: {
       aleksandr: {
+        id: "aleksandr",
         firstName: "Аляксандр",
         secondName: "Лазараў",
         photo: {
@@ -147,6 +158,7 @@ const developers = {
         scope: "collaboration",
       },
       olga: {
+        id: "olga",
         firstName: "Вольга",
         secondName: "Багатырова",
         photo: {
@@ -160,6 +172,7 @@ const developers = {
         scope: "collaboration",
       },
       olesya: {
+        id: "olesya",
         firstName: "Олеся",
         secondName: "Жерносек",
         photo: {
@@ -172,6 +185,7 @@ const developers = {
         scope: "collaboration",
       },
       andrey: {
+        id: "andrey",
         firstName: "Андрей",
         secondName: "Бакалов",
         photo: {
@@ -183,9 +197,10 @@ const developers = {
         position: "group 26",
         scope: "collaboration",
       },
-      artem: {
-        firstName: "Артем",
-        secondName: "Вишневский",
+      oleg: {
+        id: "oleg5",
+        firstName: "Aлег",
+        secondName: "Вішнеўскі",
         photo: {
           url:
             "https://pp.userapi.com/c858220/v858220086/229bb/PI0xPP7E7LU.jpg",

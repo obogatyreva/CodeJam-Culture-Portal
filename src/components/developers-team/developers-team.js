@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 export default function DevelopersTeam(info) {
   const classes = useStyles()
   const lang = info.eng
-  const { aleksandr, olga, olesya, andrey, artem } = lang
+  const { aleksandr, olga, olesya, andrey, oleg } = lang
 
   return (
     <>
@@ -36,7 +36,7 @@ export default function DevelopersTeam(info) {
         <DeveloperCard {...olga} />
         <DeveloperCard {...olesya} />
         <DeveloperCard {...andrey} />
-        <DeveloperCard {...artem} />
+        <DeveloperCard {...oleg} />
       </Container>
     </>
   )
