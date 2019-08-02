@@ -1,3 +1,3 @@
-import databaseApi from "./database-api";
+import databaseApi from "./database-api"
 
-export default databaseApi;
+export default databaseApi
