@@ -1,17 +1,18 @@
 import React, {Component} from "react";
-
 import Layout from "../Components/layout";
 import databaseApi from "../database-api";
 import WriterOfTheDay from "../Components/writer-of-the-day";
 import DeveloversTeam from "../Components/developers-team";
+import { graphql, useStaticQuery } from "gatsby"
 
-export default class extends Component {
+export default class Lal extends Component {
+
   render() {
-    const lang = 'en';
-    console.log(lang);
+    {console.log(1)}
     return <Layout>
+      {console.log(1)}
       <WriterOfTheDay {...databaseApi.writerOfTheDay} />
-      <DeveloversTeam {...databaseApi.develoversTeam } />
+      <DeveloversTeam {...databaseApi.develoversTeam} />
     </Layout>
   }
 }

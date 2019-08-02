@@ -17,7 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Person from '@material-ui/icons/PermIdentity';
 import People from '@material-ui/icons/People';
-import DevTeam from '@material-ui/icons/Build';
+
 import Typography from '@material-ui/core/Typography';
 import databaseApi from '../../database-api';
 
@@ -183,7 +183,7 @@ const MiniDrawer = ({children}) =>{
      <main className={classes.content}>
        {children}
        <h1>{lang}</h1>
-        {/* <WriterList writerInfo={info.writers[0]}/> */}
+
      </main>
   </div>
   );
